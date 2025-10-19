@@ -3,7 +3,11 @@ set -euo pipefail
 
 ARQ="100k-most-used-passwords-NCSC.txt"
 SAIDA="listaSenhas.txt"
-LINHAS=2500
+LINHAS=3000
+
+echo "=== Removendo John Antigo ==="
+sudo apt-get remove john
+echo "=== John Removido ==="
 
 echo "=== Instalando dependências básicas ==="
 sudo apt-get update

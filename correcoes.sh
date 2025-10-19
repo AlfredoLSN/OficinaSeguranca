@@ -33,6 +33,7 @@ echo "=== Compilação concluída com sucesso! ==="
 echo "O binário está disponível em: $HOME/src/john/run/john"
 
 echo "=== Verificando arquivo de senhas ==="
+cd /home/ice/security_workshop
 if [ ! -f "$ARQ" ]; then
   echo "Arquivo '$ARQ' não encontrado no diretório $(pwd) ou no diretório atual onde o script foi executado."
   echo "Coloque '$ARQ' no diretório corrente e execute novamente, ou altere a variável ARQ no script."
